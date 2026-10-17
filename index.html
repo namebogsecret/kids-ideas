@@ -86,6 +86,15 @@
   #ssr-fallback .idea-src{color:var(--muted);font-size:12px}
   #ssr-fallback .idea-meta{font-size:13.5px;color:#374151;margin:4px 0}
   #ssr-fallback .idea-why{font-size:13.5px;font-style:italic;color:#374151}
+  /* тач-цели на телефоне: ≥36-40px (аудит 17.10: 97/104 контролов <32px) */
+  @media (pointer:coarse),(max-width:760px){
+    label.row{min-height:40px;padding:4px 0}
+    label.row input{width:20px;height:20px;flex:none}
+    .chip{min-height:36px;min-width:36px;display:inline-flex;align-items:center;justify-content:center;padding:6px 14px}
+    .btn,select.sort,.search{min-height:40px}
+    input[type=range]{height:32px}
+    .net-header nav a,footer a{display:inline-flex;align-items:center;min-height:32px;padding:0 4px}
+  }
 </style>
 </head>
 <body>
